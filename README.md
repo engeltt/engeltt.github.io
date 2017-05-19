@@ -25,6 +25,7 @@ Syntax highlighted code block
 
 [Link](https://engeltt.github.io) and ![Image](src)
 ```
+[link](https://engeltt.github.io)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
