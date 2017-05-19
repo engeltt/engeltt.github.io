@@ -23,7 +23,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](https://engeltt.github.io) and ![Image](src)
+[Link](url) and ![Image](src)
 ```
 [link](https://engeltt.github.io/docs/index.md)
 
