@@ -6,7 +6,7 @@
 
 [RabbitMQ学习笔记](https://engeltt.github.io/docs/rabbitmq)
 
-[tornado框架原理](https://engeltt.github.io/docs/tornado)
+[Tornado框架原理](https://engeltt.github.io/docs/tornado)
 
 ### 日志分析系统
 
@@ -14,4 +14,4 @@
 
 ### django web开发
 
-[django框架特性](https://engeltt.github.io/docs/django)
+[Django框架特性](https://engeltt.github.io/docs/django)
