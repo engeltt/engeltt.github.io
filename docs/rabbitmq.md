@@ -72,8 +72,9 @@ topic exchange可以表现为其他类型的exchange：binding key设置为#，�
 **callback queue**  
 总的来说，rabbitmq的rpc很简单：一个客户端发送一个请求消息，一个服务端回复一个响应消息。为了接收到响应，客户端发起请求时要带上回调队列的地址。
 
-**消息属性**
-AMQP 0-9-1协议预定义了消息的14个属性，大部分属性很少使用，除了这些属性较常用：  
+**消息属性**  
+AMQP 0-9-1协议预定义了消息的14个属性，大部分属性很少使用，除了这些属性较常用： 
+
 - delivery_mode:标记一个消息为持久化消息（2）或临时消息（任意其他的值）
 - content_type:用来描述编码的mime类型。例如JSON类型，content_type设置为application/json
 - reply_to:通常用来指定回调队列
