@@ -75,7 +75,7 @@ topic exchange可以表现为其他类型的exchange：binding key设置为#，�
 **消息属性**  
 AMQP 0-9-1协议预定义了消息的14个属性，大部分属性很少使用，除了这些属性较常用： 
 
-- delivery_mode:标记一个消息为持久化消息（2）或临时消息（任意其他的值）
+- delivery_mode:标记一个消息为持久化消息（值为2）或临时消息（任意其他的值）
 - content_type:用来描述编码的mime类型。例如JSON类型，content_type设置为application/json
 - reply_to:通常用来指定回调队列
 - correlation_id:用于关联rpc响应和请求
