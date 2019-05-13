@@ -20,7 +20,7 @@
 fanout exchange：广播收到的消息给它知道的所有队列
 
 ## rabbitmq tutorial
-1.例子一 queue 
+1.例子一 queue  
 send.py(生产者)  receiver.py(消费者)  
 ![tutorial 1](https://engeltt.github.io/images/4.png)
 
