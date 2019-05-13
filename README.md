@@ -6,7 +6,7 @@
 
 [RabbiMQ学习笔记](https://engeltt.github.io/docs/rabbitmq)
 
-[ELK日志分析系统搭建](https://engeltt.github.io/docs/elk).
+[ELK日志分析系统搭建](https://engeltt.github.io/docs/elk)
 
 ### 日志分析系统
 
