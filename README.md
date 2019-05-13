@@ -4,7 +4,7 @@
 
 ### 消息系统
 
-[RabbiMQ学习笔记](https://engeltt.github.io/docs/rabbitmq)
+[RabbitMQ学习笔记](https://engeltt.github.io/docs/rabbitmq)
 
 [ELK日志分析系统搭建](https://engeltt.github.io/docs/elk)
 
