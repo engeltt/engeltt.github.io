@@ -24,7 +24,7 @@ fanout exchange：广播收到的消息给它知道的所有队列
 send.py(生产者)  receiver.py(消费者)  
 ![tutorial 1](https://engeltt.github.io/images/4.png)
 
-2.例子二 task queue  
+2.例子二 work queue  
 worker.py(消费者)  new_task.py(生产者)  
 ![tutorial 2](https://engeltt.github.io/images/5.png)  
 多个worker，一个producer
