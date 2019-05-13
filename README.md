@@ -8,6 +8,8 @@
 
 [Tornado框架原理](https://engeltt.github.io/docs/tornado)
 
+[消息系统架构](https://engeltt.github.io/docs/message_system)
+
 ### 日志分析系统
 
 [ELK日志分析系统搭建](https://engeltt.github.io/docs/elk)
