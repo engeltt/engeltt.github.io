@@ -80,6 +80,21 @@ AMQP 0-9-1协议预定义了消息的14个属性，大部分属性很少使用�
 - reply_to:通常用来指定回调队列
 - correlation_id:用于关联rpc响应和请求
 
+消息属性概览
+- content_type ： 消息内容的类型
+- content_encoding： 消息内容的编码格式
+- priority： 消息的优先级
+- correlation_id：关联id
+- reply_to: 用于指定回复的队列的名称
+- expiration： 消息的失效时间
+- message_id： 消息id
+- timestamp：消息的时间戳
+- type： 类型
+- user_id: 用户id
+- app_id： 应用程序id
+- cluster_id: 集群id
+- Payload: 消息内容
+
 **Correlation id**  
 为每一个rpc请求创建一个回调队列，是相当低效的，好在有一个更好的方法：每个客户端创建单个回调队列。这带来一个新的问题：队列收到响应消息时不知道是对应哪个请求的。这时，correlation_id就派上用场了。每个请求都设置一个唯一的correlation_id，之后，当我们在回调队列中收到消息时，我们将查看这个属性，这样就可以知道这个响应是对应哪个请求的。如果发现是未知的correlation_id，那么就可以安全地丢弃掉这条消息，因为它不属于任何一个请求。
 
