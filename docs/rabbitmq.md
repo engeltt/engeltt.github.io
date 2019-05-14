@@ -20,30 +20,30 @@
 fanout exchange：广播收到的消息给它知道的所有队列
 
 ## rabbitmq tutorial
-1.例子一 queue  
+### 例子一 queue  
 send.py(生产者)  receiver.py(消费者)  
 ![tutorial 1](https://engeltt.github.io/images/4.png)
 
-2.例子二 work queue  
+### 例子二 work queue  
 worker.py(消费者)  new_task.py(生产者)  
 ![tutorial 2](https://engeltt.github.io/images/5.png)  
 多个worker，一个producer
 
-3.例子三 发布/订阅  
+### 例子三 发布/订阅  
 简单日志系统   emit_log.py   receives_log.py  
 ![tutorial 3](https://engeltt.github.io/images/6.png)  
 fanout exchange  
 exchange和queue之间的关系称为bind  
 发布消息前必须先声明exchange，因为发消息给不存在的exchange是不允许的。
 
-4.例子四 路由  
+### 例子四 路由  
 给例子三的日志系统加上一个特性：允许订阅消息的子集。例如只将critical error messages存入日志文件，而将所有日志消息打印到控制台。  
 ![tutorial 4](https://engeltt.github.io/images/7.png)  
 绑定：queue对这个exchange的消息感兴趣。  
 routing_key  这个例子里面是错误等级  
 queue_bind的routing_key是绑定key
 
-5.例子五 主题  
+### 例子五 主题  
 新需求：在日志系统中不仅需要根据错误等级来订阅消息，也需要根据产生日志的源来订阅消息。需要使用topic类型的exchange。  
 
 **topic exchange**  
@@ -56,7 +56,7 @@ topic exchange的实现逻辑和direct exchange类似——一条有特定routin
 上图中topic exchange的routing_key定义规则：<celerity>.<colour>.<species>  
 topic exchange可以表现为其他类型的exchange：binding key设置为#，表现为fanout；不用任何的*或#，则表现为direct。
 
-6.例子六 RPC  
+### 例子六 RPC  
 本例中，我们将使用rabbitmq来构建一个RPC系统：一个客户端和一个可扩展的服务端。构建一个dummy rpc服务，返回佩波那契数列。
 
 **client interface**  
