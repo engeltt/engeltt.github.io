@@ -109,7 +109,8 @@ AMQP 0-9-1协议预定义了消息的14个属性，大部分属性很少使用�
 - rpc worker等待请求。当请求到达时，worker处理请求并将结果返回给reply_id指定的queue
 - 客户端在回调队列等待数据。当消息到达时，它先核对correlation_id。如果和请求的一致，则返回响应给应用程序
 
-
-
-
+## rabbitmq消息持久化
+- 队列持久化需要在声明队列时添加参数 durable=True，这样在rabbitmq崩溃时也能保存队列
+- 仅仅使用durable=True ，只能持久化队列，不能持久化消息
+- 消息持久化需要在消息生成时，添加参数 properties=pika.BasicProperties(delivery_mode=2)
 
