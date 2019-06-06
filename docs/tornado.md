@@ -6,6 +6,6 @@
 ![tornado ioloop](https://engeltt.github.io/images/tornado_1.png)
 
 ## tornado处理request请求
-post 请求
-框架默认解析form data和urlencode两种形式的post数据
+post 请求  
+框架默认解析form data和urlencode两种形式的post数据  
 针对post json格式数据，需要直接获取到body里到内容并解析出来  
