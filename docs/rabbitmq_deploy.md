@@ -1,5 +1,6 @@
 ## 1.virtual hosts
 当rabbitmq给单一项目提供服务时：使用默认的虚拟主机virtual host(/)就可以了。  
+
 给不同项目提供服务时：每个项目配置一个虚拟主机，例如：  
 project1_development, project1_production, project2_development, project2_production
 
