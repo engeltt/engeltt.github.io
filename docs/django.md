@@ -7,6 +7,7 @@ queryset是一个list，操作时注意判断list是否为空，再对里面的�
 Foreignkey 多对一，可以定义related_name，反引
 
 ## admin自定义list filter 
+```
 from datetime import date
 
 from django.contrib import admin
@@ -50,3 +51,4 @@ class DecadeBornListFilter(admin.SimpleListFilter):
 
 class PersonAdmin(admin.ModelAdmin):
     list_filter = (DecadeBornListFilter,)
+```
