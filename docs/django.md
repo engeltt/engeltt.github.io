@@ -7,6 +7,10 @@ queryset是一个list，操作时注意判断list是否为空，再对里面的�
 Foreignkey 多对一，可以定义related_name，反引
 
 ## admin自定义list filter 
+
+常用的例子：list_filter = ['id', 'name']
+
+自定义例子：
 ```
 from datetime import date
 
