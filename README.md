@@ -19,3 +19,7 @@
 ### django web开发
 
 [Django框架特性](https://engeltt.github.io/docs/django)
+
+### wordpress跨版本升级
+
+[Wordpress](https://engeltt.github.io/docs/wordpress)
