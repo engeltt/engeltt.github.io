@@ -20,6 +20,6 @@
 
 [Django框架特性](https://engeltt.github.io/docs/django)
 
-### wordpress跨版本升级
+### wordpress
 
-[Wordpress](https://engeltt.github.io/docs/wordpress)
+[Wordpress跨版本升级](https://engeltt.github.io/docs/wordpress)
