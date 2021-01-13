@@ -66,6 +66,9 @@ At time 4, customer 3 passes through the turnstile.
 
 ![state automaton](https://engeltt.github.io/images/WechatIMG31.jpeg)
 ```
+from collections import deque
+
+
 class Automaton:
     def __init__(self, n):
         self.state = 'unused'
@@ -74,8 +77,8 @@ class Automaton:
             'unused': ['unused', 'entry', 'exit', 'exit'],
             'exit': ['unused', 'entry', 'exit', 'exit']
         }
-        self.entry = []
-        self.exit = []
+        self.entry = deque([])
+        self.exit = deque([])
         self.ans = [-1] * n
 
     def get_col(self):
@@ -92,17 +95,17 @@ class Automaton:
         self.state = self.table[self.state][self.get_col()]
         if self.state == 'entry':
             if self.entry:
-                value, index = self.entry.pop()
+                value, index = self.entry.popleft()
                 self.ans[index] = second
             elif self.exit:
-                value, index = self.exit.pop()
+                value, index = self.exit.popleft()
                 self.ans[index] = second
         else:
             if self.exit:
-                value, index = self.exit.pop()
+                value, index = self.exit.popleft()
                 self.ans[index] = second
             elif self.entry:
-                value, index = self.entry.pop()
+                value, index = self.entry.popleft()
                 self.ans[index] = second
 
     def get(self, seconds, time, direction):
@@ -136,5 +139,6 @@ class Solution:
 
 solution = Solution()
 print('case1:', solution.turnstile(4, [0, 0, 1, 5], [0, 1, 1, 0]))
-print('case2:', solution.turnstile(5, [0, 1, 1, 3, 3], [0, 1, 0, 0, 1]))
+print('case2:', solution.turnstile(9, [1, 1, 3, 3, 4, 5, 6, 7, 7], [1, 1, 0, 0, 0, 1, 1, 1, 1]))
+print('case3:', solution.turnstile(5, [0, 1, 1, 3, 3], [0, 1, 0, 0, 1]))
 ```
