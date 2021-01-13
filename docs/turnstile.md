@@ -20,7 +20,7 @@ direction: a list of integers where the value at index i is the direction of the
 Output
 Return a list of integers where the value at index i is the time when the ith customer will pass the turnstile.
 
-Constraints
+Constraints:  
 1 <= numCustomers <= 10^5
 
 0 <= arrTime[i] <= arrTime[i + 1] <= 10^9
@@ -31,6 +31,7 @@ Constraints
 
 0 <= j <= numCustomers - 1
 
+------------------------------
 Examples
 Example 1:
 Input:
